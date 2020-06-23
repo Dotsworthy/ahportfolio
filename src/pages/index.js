@@ -9,11 +9,11 @@ import showreel from "../public/showreel.mp4"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <div style={{ width: '100%', height: '562px' }}>
+    <div style={{ width: '100%', height: '563px' }}>
       <div style={{width: '100%', height: '562px', position: 'absolute'}}>
         <video 
         width="100%" 
-        height="560px" 
+        height="562px" 
         autoPlay 
         loop 
         muted>
@@ -21,10 +21,10 @@ const IndexPage = () => (
         </video>
       </div>
 
-      <div style={{height: '565px', width:'100%', backgroundColor: '#49A078', opacity: '0.8', position: 'absolute'}}>
+      <div style={{height: '563px', width:'100%', backgroundColor: '#49A078', opacity: '0.8', position: 'absolute'}}>
       </div>
 
-      <div style={{display: 'flex', height: '565px', width: '100%', position: 'absolute', alignItems: 'center', justifyContent: 'center'}}>
+      <div style={{display: 'flex', height: '562px', width: '100%', position: 'absolute', alignItems: 'center', justifyContent: 'center'}}>
         <h1 style={{fontSize: '4rem', color: 'white'}}>Adam Harper: Editor</h1>
       </div>
      </div>

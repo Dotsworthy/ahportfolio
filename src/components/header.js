@@ -7,7 +7,7 @@ const Header = ({ siteTitle }) => (
     <div className='navbar'>
       <a href='#about'>About</a>
       <a href='#cv'>CV</a>
-      <a href='#showreel'>Showreel</a>
+      <a href='#projects'>Projects</a>
       <a href='#contact'>Contact</a>
       </div>
   </header>

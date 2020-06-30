@@ -104,32 +104,35 @@ font-size: 2rem;
 #about {
   @extend %content-container-options;
   height: 100vh;
+  padding-top: 5vh;
 }
 
 #cv {
   @extend %content-container-options;
-  // height: 150vh;
-}
-
-.career-container {
+  // height: 100vh;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  height: 150vh;
-  width: 100%;
-  align-items: stretch;
+  padding-top: 5vh;
 
-  p {
+  .career-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 80vh;
+    width: 100%;
+    align-items: stretch;
+    // padding: 0 2vw;
 
-  }
-
-  .item {
-    width: 50%;
+    .item {
+      width: 50%;
+      font-size: 0.7em;
+      line-height: 1em;
+    }
   }
 }
 
 
-#showreel {
+#projects {
   @extend %content-container-options;
   height: 100vh;
 
@@ -162,4 +165,16 @@ a:visited {
 p {
   padding: 0 20%;
   // margin: 30px;
+}
+
+.italic {
+  font-style: italic;
+}
+
+h2 {
+  padding: 0 20%;
+}
+
+h4 {
+  padding: 0 20%;
 }

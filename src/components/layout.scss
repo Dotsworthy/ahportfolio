@@ -51,7 +51,7 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #264653;
+  background: linear-gradient(to bottom,#264653, #333333);
   color: white;
 }
 
@@ -73,6 +73,11 @@ width: 100%;
 height: auto;
 position: absolute;
 display: flex;
+video {
+  width: 100%;
+  height: auto;
+  filter:opacity(30%);
+}
 }
 
 .title-overlay {
@@ -112,7 +117,7 @@ font-size: 2rem;
   // height: 100vh;
   display: flex;
   flex-direction: column;
-  padding-top: 5vh;
+  padding-top: 3em;
 
   .credit {
     font-size: 0.7em;
@@ -139,7 +144,6 @@ font-size: 2rem;
   }
 }
 
-
 #projects {
   @extend %content-container-options;
   height: 100vh;
@@ -155,11 +159,7 @@ font-size: 2rem;
   height: 90vh;
 }
 
-video {
-  width: 100%; 
-  height: auto;
-  overflow: hidden;
-}
+
 
 a {
   text-decoration: none;

@@ -19,8 +19,8 @@ const IndexPage = () => (
         </video>
       </div>
 
-      <div className="title-overlay">
-      </div>
+      {/* <div className="title-overlay">
+      </div> */}
 
       <div className="title-text">
         <h1>Adam Harper: Editor</h1>

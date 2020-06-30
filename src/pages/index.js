@@ -93,13 +93,13 @@ const IndexPage = () => (
     
 
   </div>
-  <div id="showreel" className="content-container">
+  <div id="showreel">
   <h1>Showreel</h1>
   <video controls>
         <source src={showreel} type="video/mp4"/>
         </video>
   </div>
-  <div id="contact" className="content-container">
+  <div id="contact">
     <h1>Contact</h1>
     <p>email: adam.r.harper@gmail.com</p>
     <p>phone: 07847 841 171</p>

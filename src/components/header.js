@@ -9,7 +9,6 @@ const Header = ({ siteTitle }) => (
       <a href='#cv'>CV</a>
       <a href='#showreel'>Showreel</a>
       <a href='#contact'>Contact</a>
-      <a href="mailto:adam.r.harper@gmail.com">adam.r.harper@gmail.com</a>
       </div>
   </header>
 )

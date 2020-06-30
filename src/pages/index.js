@@ -35,13 +35,13 @@ const IndexPage = () => (
   <div id="cv">
       <h1>CV</h1>
 
- 
+      <div className="credit">
+      <h2>Credits</h2>
+      </div>
       
     <div className="career-container">
     
-    <div className="item">
-      <h2>Credits</h2>
-      </div>
+    
 
       <div className="item">
       <h4>Russian Data (Sept 2019)</h4>
@@ -96,7 +96,7 @@ const IndexPage = () => (
       </div>
 
       <div className="item">
-      <p>2013 – 2014: MA in Filmmaking. Edinburgh Napier University, Edinburgh.</p>
+      <p>MA in Filmmaking (2014), Edinburgh Napier University</p>
       </div>
 
     </div>

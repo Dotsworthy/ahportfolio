@@ -114,6 +114,13 @@ font-size: 2rem;
   flex-direction: column;
   padding-top: 5vh;
 
+  .credit {
+    font-size: 0.7em;
+    line-height: 1em;
+    width: 50%;
+    align-self: flex-start;
+    }
+
   .career-container {
     display: flex;
     flex-direction: column;
@@ -128,6 +135,7 @@ font-size: 2rem;
       font-size: 0.7em;
       line-height: 1em;
     }
+
   }
 }
 
@@ -163,7 +171,7 @@ a:visited {
 }
 
 p {
-  padding: 0 20%;
+  padding: 0 5em;
   // margin: 30px;
 }
 
@@ -171,10 +179,15 @@ p {
   font-style: italic;
 }
 
+h1 {
+  font-size: 2em;
+  margin-bottom: 0;
+}
+
 h2 {
-  padding: 0 20%;
+  padding: 0 3.3em;
 }
 
 h4 {
-  padding: 0 20%;
+  padding: 0 5em;
 }

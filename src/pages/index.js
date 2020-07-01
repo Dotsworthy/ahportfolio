@@ -6,8 +6,26 @@ import Image from "../components/image"
 import SEO from "../components/seo"
 import showreel from "../public/showreel.mp4"
 import profile from "../public/profile.jpeg"
+import Swiper from 'react-id-swiper';
+import 'swiper/css/swiper.css';
 
-const IndexPage = () => (
+const IndexPage = () => {
+  const params = {
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev'
+    },
+    // spaceBetween: 30,
+    // setWrapperSize: 'true'
+  }
+
+  return (
+    
   <Layout>
 
     <SEO title="Home" />
@@ -106,19 +124,30 @@ const IndexPage = () => (
 
   </div>
   <div id="projects">
-  <h1>Projects</h1>
-  <video controls>
-        <source src={showreel} type="video/mp4"/>
-        </video>
+    <h1>Projects</h1>
+    <Swiper {...params}>
+    <div><p>Showreel</p><video controls><source src={showreel} type="video/mp4"/></video></div>
+    <div><p>Until Sunrise (2017)</p><iframe src="https://player.vimeo.com/video/287274071" width="600" height="267" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+    <div><p>Man on Layby 52 (2017)</p><iframe src="https://player.vimeo.com/video/392430461" width="600" height="337" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe><p>Password: MOL52</p></div>
+
+  </Swiper>
+
+  
+
+    {/* <div><video controls><source src={showreel} type="video/mp4"/></video></div> */}
+
   </div>
   <div id="contact">
     <h1>Contact</h1>
+    <div>
     <p>email: adam.r.harper@gmail.com</p>
     <p>phone: 07847 841 171</p>
+    </div>
+    
   </div>
     <div>
     </div>
   </Layout>
-)
+  )}
 
 export default IndexPage

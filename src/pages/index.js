@@ -31,18 +31,17 @@ const IndexPage = () => {
     <SEO title="Home" />
 
     <div className="title-container">
+
+    <div className="title-text">
+        <h1>Adam Harper: Editor</h1>
+      </div>
+
       <div className="title-video">
         <video autoPlay loop muted>
           <source src={showreel} type="video/mp4"/>
         </video>
       </div>
 
-      {/* <div className="title-overlay">
-      </div> */}
-
-      <div className="title-text">
-        <h1>Adam Harper: Editor</h1>
-      </div>
      </div>  
 
   <div id="about">
@@ -51,16 +50,11 @@ const IndexPage = () => {
   </div>
 
   <div id="cv">
-      <h1>CV</h1>
-
-      <div className="credit">
-      <h2>Credits</h2>
-      </div>
       
+    <h3>Credits</h3>
+          
     <div className="career-container">
     
-    
-
       <div className="item">
       <h4>Russian Data (Sept 2019)</h4>
       <p className="italic">BBC The Social</p>
@@ -109,26 +103,25 @@ const IndexPage = () => {
       <p>In charge of the technical aspects of post-production and distribution of films. Main responsibilities include Assistant Editing, creating DCPs, film distribution, the filming and editing of masterclasses.</p>
       </div>
 
-      <div className="item">
-      <h2>Education</h2>
-      </div>
-
-      <div className="item">
-      <p>MA in Filmmaking (2014), Edinburgh Napier University</p>
-      </div>
-
     </div>
-
+      
+    <div className="education">
+      <h3>Education</h3>
+      <p>MA in Filmmaking (2014), Edinburgh Napier University</p>
+    </div>
     
-    
-
   </div>
+
   <div id="projects">
-    <h1>Projects</h1>
+    <h3>Projects</h3>
     <Swiper {...params}>
     <div><p>Showreel</p><video controls><source src={showreel} type="video/mp4"/></video></div>
-    <div><p>Until Sunrise (2017)</p><iframe src="https://player.vimeo.com/video/287274071" width="600" height="267" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
-    <div><p>Man on Layby 52 (2017)</p><iframe src="https://player.vimeo.com/video/392430461" width="600" height="337" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe><p>Password: MOL52</p></div>
+    <div><p>Natwest Pride Promo</p><iframe src="https://player.vimeo.com/video/383020662" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe><p>Password: promo1</p></div>
+    <div><p>Event Den Promo</p><iframe src="https://player.vimeo.com/video/385255183" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe><p>Password: promo2</p></div>
+    <div><p>Until Sunrise (2017)</p><iframe src="https://player.vimeo.com/video/287274071" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+    <div><p>Man on Layby 52 (2016)</p><iframe src="https://player.vimeo.com/video/392430461" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe><p>Password: MOL52</p></div>
+    
+    
 
   </Swiper>
 

@@ -105,6 +105,7 @@ body {
 #about {
   @extend %content-container-options;
   height: 100vh;
+  padding: 0 5em;
   
   img {
     height: 10em;
@@ -124,8 +125,7 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding-top: 3em;
-  padding: 0 5em;
+  padding: 3em 5em;
 
     @media (min-aspect-ratio: 16/9) {
       height: 100vh;

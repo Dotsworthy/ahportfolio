@@ -6,29 +6,15 @@ import Image from "../components/image"
 import SEO from "../components/seo"
 import showreel from "../public/showreel.mp4"
 import profile from "../public/profile.jpeg"
-import Swiper from 'react-id-swiper';
-import 'swiper/css/swiper.css';
 
 const IndexPage = () => {
-  const params = {
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev'
-    },
-    // spaceBetween: 30,
-    // setWrapperSize: 'true'
-  }
 
   return (
     
   <Layout>
 
     <SEO title="Home" />
+
 
     <div className="title-container">
 
@@ -37,9 +23,9 @@ const IndexPage = () => {
       </div>
 
       <div className="title-video">
-        <video autoPlay loop muted>
+        {/* <video autoPlay loop muted>
           <source src={showreel} type="video/mp4"/>
-        </video>
+        </video> */}
       </div>
 
      </div>  
@@ -113,21 +99,16 @@ const IndexPage = () => {
   </div>
 
   <div id="projects">
-    <h3>Projects</h3>
-    <Swiper {...params}>
+    {/* <h3>Projects</h3>
+    
     <div><p>Showreel</p><video controls><source src={showreel} type="video/mp4"/></video></div>
     <div><p>Natwest Pride Promo</p><iframe src="https://player.vimeo.com/video/383020662" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe><p>Password: promo1</p></div>
     <div><p>Event Den Promo</p><iframe src="https://player.vimeo.com/video/385255183" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe><p>Password: promo2</p></div>
     <div><p>Until Sunrise (2017)</p><iframe src="https://player.vimeo.com/video/287274071" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
     <div><p>Man on Layby 52 (2016)</p><iframe src="https://player.vimeo.com/video/392430461" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe><p>Password: MOL52</p></div>
     
-    
+     */}
 
-  </Swiper>
-
-  
-
-    {/* <div><video controls><source src={showreel} type="video/mp4"/></video></div> */}
 
   </div>
   <div id="contact">

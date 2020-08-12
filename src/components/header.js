@@ -9,7 +9,7 @@ const Header = ({ siteTitle }) => (
       <a href='#cv'>CV</a>
       <a href='#projects'>Projects</a>
       <a href='#contact'>Contact</a>
-      </div>
+    </div>
   </header>
 )
 

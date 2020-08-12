@@ -23,9 +23,9 @@ const IndexPage = () => {
       </div>
 
       <div className="title-video">
-        {/* <video autoPlay loop muted>
+        <video autoPlay loop muted>
           <source src={showreel} type="video/mp4"/>
-        </video> */}
+        </video>
       </div>
 
      </div>  

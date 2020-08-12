@@ -22,10 +22,6 @@ $base-font-size: 1em;
   }
 }
 
-%content-options {
-  padding: 0 5em;
-}
-
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -86,7 +82,7 @@ body {
       height: 100vh;
       }  
       @media (min-aspect-ratio: 16/9) {
-      min-height: 100vh;  
+      min-width: 100vw;  
       max-height: 105vh;
       }
       @media (min-aspect-ratio: 21/9) {
@@ -121,14 +117,12 @@ body {
 
 #cv {
   @extend %content-container-options;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 3em 5em;
+  padding: 60px 5em;
+
 
     @media (min-aspect-ratio: 16/9) {
       height: 100vh;
+      padding: 0 5em;
     }
 
     @media (min-aspect-ratio: 21/9) {
